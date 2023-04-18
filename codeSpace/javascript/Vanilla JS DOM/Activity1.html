@@ -1,0 +1,34 @@
+<!--Vanilla JS DOM.  Activity 1.   Simon Mulligan-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity 1 - Vanilla JS DOM</title>
+        <style>
+            #paragraphs {
+              border: 1px solid black;      /*styling of head*/
+              margin: 5px; 
+            }
+        </style>
+    </head>
+
+    <body style = "text-align: center;">
+        <h1 style = "color: green;">Vanilla JS DOM</h1>      <!--styling of body-->
+        
+        <div id="paragraphs">
+            <p id='text'>Test Area</p>    <!--p 'Test area' initially is unstyled-->
+            
+        </div>
+        <button onclick="myFunction()">Press to style HTML</button>
+        <script>
+            function myFunction() {
+                let x = document.getElementById("paragraphs").querySelectorAll("p");   //upon pressing button, p is re styled
+                for (let i = 0; i < x.length; i++) {
+                    x[i].style.backgroundColor = "red";
+                    x[i].style.color = "white";
+                    
+                }
+            }
+        </script>
+    </body>
+</html>

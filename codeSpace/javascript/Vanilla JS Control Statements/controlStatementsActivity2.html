@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // check if 3 numbers are increasing or decreasing in order or a mix of both
+
+        //prompts the user to enter 3 numbers
+        const number1 = prompt("Enter a number: ");
+        const number2 = prompt("Enter another number: ");
+        const number3 = prompt("Enter a third number: ");
+
+
+        //if the 2nd entered number is bigger than the 1st AND 3rd number is bigger than 2nd, 'Increasing' will be displayed
+        if (number2 > number1 && number3 > number2) {
+            alert("Increasing Order");
+        }
+        //if the 1st num entered is greater than the 2nd AND the 2nd greater than the 3rd, 'Decreasing' is displayed
+            else if (number1 > number2 && number2 > number3) {
+            alert("Decreasing Order");
+        }
+        // if neither of the 2 previous options are met, user will see 'neiither increasing or decreasing message'
+                else {
+                alert("Neither Increasing or Decreasing Order");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
